@@ -1,0 +1,17 @@
+{
+    "name": "souleymane/library",
+    "autoload": {
+        "psr-4": {
+            "Souleymane\\Library\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "souleymane"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "endroid/qr-code": "^6.0"
+    }
+}

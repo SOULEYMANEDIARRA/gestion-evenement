@@ -1,0 +1,18 @@
+{
+    "name": "souleymane/mes_fichiers",
+    "autoload": {
+        "psr-4": {
+            "Souleymane\\MesFichiers\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "souleymane"
+        }
+    ],
+    "require": {
+        "endroid/qr-code": "^6.0",
+        "phpmailer/phpmailer": "^6.9",
+        "altorouter/altorouter": "^2.0"
+    }
+}
