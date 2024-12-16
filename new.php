@@ -25,11 +25,11 @@ function vreifier($val1, $val2)
         return false;
     }
 }
-// $condition_public = vreifier($_POST['prive_public'], 'public');
-// $condition_prive =  vreifier($_POST['prive_public'], 'prive');
-// $condition_mariage =  vreifier($_POST['ev_type'], 'mariage');
-// $condition_concert =  vreifier($_POST['ev_type'], 'concert');
-// $condition_aniv =  vreifier($_POST['ev_type'], 'aniv');
+ $condition_public = vreifier($_POST['prive_public'], 'public');
+ $condition_prive =  vreifier($_POST['prive_public'], 'prive');
+ $condition_mariage =  vreifier($_POST['ev_type'], 'mariage');
+ $condition_concert =  vreifier($_POST['ev_type'], 'concert');
+ $condition_aniv =  vreifier($_POST['ev_type'], 'aniv');
 function condition($debut)
 {
     if ($debut) {
