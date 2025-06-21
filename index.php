@@ -1,8 +1,5 @@
 <?php
 require_once 'config.php';
-if(isset($_GET['aaaa'])){
-    header('location:page2.php');
-}
 ?>
 <div class=" centre1">
     <div class="index2 centre2">

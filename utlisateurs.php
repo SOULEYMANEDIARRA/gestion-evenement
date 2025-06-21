@@ -28,7 +28,7 @@ $users = $new_user->allUsert(); ?>
         if ($bani === 0) { ?>
             <div class="comment user1">
                 <div class="comment1">
-                    <img src="data:image/jpeg;base64,<?php echo base64_encode($profil) ?>" class="profil2" alt="Photo de profif" /><br>
+                    <img src="<?php echo ($profil) ?>" class="profil2" alt="Photo de profif" /><br>
                     <p>
                         <?php echo "$prenom  $nom $numero" ?>
                     </p>
@@ -44,7 +44,7 @@ $users = $new_user->allUsert(); ?>
         ?>
             <div class="comment user1">
                 <div class="comment1">
-                    <img src="data:image/jpeg;base64,<?php echo base64_encode($profil) ?>" class="profil2" alt="Photo de profif" /><br>
+                    <img src="<?php echo ($profil) ?>" class="profil2" alt="Photo de profif" /><br>
                     <p>
                         <?php echo "$prenom  $nom $numero" ?>
                     </p>

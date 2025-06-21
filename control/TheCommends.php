@@ -23,27 +23,28 @@ class TheCommends
         $this->images = new EvnImages($pdo);
     }
 
-    public function commentairesCommendes($evn_id, $condition_vip, $condition_standart, $condition_early,$coditio)
+    public function commentairesCommendes($evn_id, $condition_vip, $condition_standart, $condition_early, $coditio)
     {
 
         if ($coditio) {
             echo $this->commendes($evn_id, $condition_vip, $condition_standart, $condition_early);
-        }
-        else{
-            echo $this->commentaire->evnCommentaires($evn_id,$_SESSION['user_id']);
+        } else {
+            echo $this->commentaire->evnCommentaires($evn_id, $_SESSION['user_id']);
         }
     }
-    private function returnImage($index , $image){
+    private function returnImage($index, $image)
+    {
         return <<<HTML
             <img src="{$image}" class='thumbnail' alt='Miniature' onclick="openModal({$index})" />
-HTML;        
+HTML;
     }
 
-    private function otherImage($evn_id){
+    private function otherImage($evn_id)
+    {
         $images = $this->images->otherImage($evn_id);
-        $images_array ='';
-        foreach ($images as $index => $image ){
-            $images_array .= $this->returnImage($index , $image);
+        $images_array = '';
+        foreach ($images as $index => $image) {
+            $images_array .= $this->returnImage($index, $image);
         }
         return $images_array;
     }

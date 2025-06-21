@@ -67,7 +67,7 @@ if ($numero_valide && $_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['pro
 <div class=" centre1">
     <div class="connexion2 centre2">
         <div class="connexion3">
-            <h2>Sign Up</h2>
+            <h2>S'inscrire</h2>
             <form action="" method="post" enctype="multipart/form-data">
                 <div>
                     <label for="nom">Votre nom</label>
